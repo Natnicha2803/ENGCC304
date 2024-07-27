@@ -3,6 +3,7 @@
 int main() {
     char employeesID[10] ;
     int hrs, salary ;
+    int month = 28 ;
     float money ;
 
     printf( "Input the Employees ID(Max. 10 chars): " ) ;
@@ -12,7 +13,7 @@ int main() {
     printf( "Salary amount/hr: " ) ;
     scanf( "%d", &salary ) ;
 
-    money = hrs * salary ;
+    money = hrs * salary * month ;
 
     printf( "--------------------------------------------------------------\n" ) ;
     printf( "Employees ID = %s \n", employeesID ) ;
