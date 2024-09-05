@@ -3,7 +3,6 @@
 #include <time.h>
 
 int main () {
-    int userscore = 100 ;
     int random , usernumber , play ;
     do {
         srand( time ( NULL ) ) ;
@@ -11,7 +10,7 @@ int main () {
        // printf( "%d \n" , random ) ;
         printf( "Do you want to play game ( 1 = play , -1 = exit )\n" ) ;
         scanf( "%d" , & play ) ;
-        userscore = 100 ;
+        int userscore = 100 ;
         int low = 1 , hight = 100 ;
         if ( play == 1 ) {
             printf( "( Score = %d )\n" , userscore ) ;
